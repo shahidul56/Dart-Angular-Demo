@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart command line",
-            "type": "dart-cli",
+            "type": "dart",
             "request": "launch",
             "program": "${workspaceRoot}/bin/main.dart"
         },
@@ -14,7 +14,7 @@
             "name": "Dart command line",
             "program": "${workspaceRoot}/bin/main.dart",
             "request": "launch",
-            "type": "dart-cli"
+            "type": "dart"
         }
     ]
 }
