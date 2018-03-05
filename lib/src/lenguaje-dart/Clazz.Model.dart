@@ -1,6 +1,7 @@
 import 'dart:async';
 
 
+
 /**
  * Definicion de una clase en el lenguaje Dart.
  */
@@ -44,7 +45,7 @@ class Clazz {
   }
 
   /**
-   * Redirir constructores.
+   * Redirigir constructores.
    */
   Clazz.alongXAxis(num x) : this(x, 0);
 
@@ -91,7 +92,7 @@ class Clazz {
   bool isCeroSimple(int value) => value ==  this.CERO;
 
   /**
-   * Parametros Opcionales, se llaman con: enableFlags(bold: true, hidden: false);
+   * Parametros opcionales, se llama a la funcion de esta manera: enableFlags(bold: true, hidden: false);
    */
   void enableFlags({bool bold, bool hidden}) { }
 
@@ -110,7 +111,7 @@ class Clazz {
   }
 
   /**
-   * Parametros con valores por defecto, se llaman con: enableFlags2(bold: true);
+   * Parametros con valores por defecto, se llama a la funcion de esta manera: enableFlags2(bold: true);
    */
   void enableFlags2({bool bold = false, bool hidden = false}) { }
 
@@ -133,9 +134,7 @@ class Clazz {
    * Metodos genericos.
    */
   T first<T>(List<T> ts) {
-    // Do some initial work or error checking, then...
-    T tmp = ts[0];
-    // Do some additional checking or processing...
+    final T tmp = ts[0];
     return tmp;
   }
 
