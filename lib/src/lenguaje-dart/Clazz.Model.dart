@@ -1,6 +1,9 @@
 import 'dart:async';
 
 
+/**
+ * Definicion de una clase en el lenguaje Dart.
+ */
 class Clazz {
 
   /**

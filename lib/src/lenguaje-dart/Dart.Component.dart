@@ -1,5 +1,9 @@
 import 'package:angular/angular.dart';
 
+
+/**
+ * Definicion de un componente de angular.
+ */
 @Component(
   selector: 'app-dart',
   templateUrl: 'Dart.Component.html',
@@ -7,22 +11,28 @@ import 'package:angular/angular.dart';
 )
 class Dart {
 
-  //Tipado.
-  String hola = "saludo desde la clase"; // Tipo String.
-  num numero = 12; //Tipo numerico.
-  int value = 99; // Tipo entero.
-  double decimal = 0.56; // Tipo double.
-  bool checked = false;  // Tipo boleano.
-
-  var variable; // Tipado dinamico.
-
+  /**
+   * Tipado de variables.
+   */
+  String hola = "Saludo.e"; // Tipo String.
+  num numero = 12;          // Tipo numerico.
+  int value = 99;           // Tipo entero.
+  double decimal = 0.56;    // Tipo double.
+  bool checked = false;     // Tipo boleano.
+  var variable;             // Tipado dinamico.
   var loudify = (msg) => '!!! ${msg.toUpperCase()} !!!'; // Variables de tipo funcion, las funciones son de primera clase.
 
-  //Listas.
+
+  /**
+   * Listas.
+   */
   var list = [1, 2, 3];
   List<int> list2 = [1, 2, 3];
 
-  //Mapas.
+
+  /**
+   * Mapas.
+   */
   var gifts = {
     // Key:    Value
     'first': 'partridge',
@@ -35,5 +45,10 @@ class Dart {
     10: 'neon',
     18: 'argon',
   };
+
+  // Caso de uso.
+  // import 'dart:convert';
+  // Employee e = JSON.decode('{"name": "hhh",  "value": 00, "checked": true}');
+  // https://webdev.dartlang.org/articles/get-data/json-web-service
 
 }
