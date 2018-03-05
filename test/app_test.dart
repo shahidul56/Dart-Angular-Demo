@@ -1,4 +1,11 @@
+@Tags(const ['aot'])
+@TestOn('browser')
 
+import 'package:angular/angular.dart';
+import 'package:angular_test/angular_test.dart';
+import 'package:test/test.dart';
+
+import 'package:angular_demo/src/App.Module.dart';
 
 @AngularEntrypoint()
 void main() {
@@ -16,7 +23,7 @@ void main() {
   });
 
   test('Greet world', () async {
-    await fixture.update((c) => c.name = 'World');
+    await fixture.update((c) => c.title = 'World');
     expect(fixture.text, 'Hello World');
   });
 
