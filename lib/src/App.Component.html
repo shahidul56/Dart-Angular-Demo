@@ -1,5 +1,7 @@
 <h1>{{title}}</h1>
-
+<ul>
+    <li *ngFor="let hero of heroes">{{hero.name}}</li>
+</ul>
 <hr>
 
 <h2>Lenguaje Dart</h2>
@@ -14,4 +16,15 @@
 
 <h2>Comunicacion con sub-components</h2>
 <app-sub-comp [subComponentProperty]="title" (subComponentEvent)="procesarEvento(value)"></app-sub-comp>
+
+<hr>
+
+<h2>Directivas Angular</h2>
+<app-directivas-ng></app-directivas-ng>
+
+<hr>
+
+<h2>Ejersicio CRUD en Angular</h2>
+<app-crud></app-crud>
+
 

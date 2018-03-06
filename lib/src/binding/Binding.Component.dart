@@ -1,10 +1,18 @@
 import 'package:angular/angular.dart';
+import 'package:angular_components/angular_components.dart';
+import 'package:angular_forms/angular_forms.dart';
 
 
 @Component(
   selector: 'app-binding',
   templateUrl: 'Binding.Component.html',
   styleUrls: const ['Binding.Component.css'],
+  directives: const [
+    CORE_DIRECTIVES,
+    formDirectives,
+    materialDirectives
+  ],
+  providers: const [materialProviders],
 )
 class Binding {
 

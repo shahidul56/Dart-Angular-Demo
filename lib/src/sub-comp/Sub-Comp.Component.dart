@@ -5,7 +5,9 @@ import 'package:angular/angular.dart';
 
 @Component(
     selector: 'app-sub-comp',
-    template: """ <p>{{subComponentProperty}}</p>
+    template: """ <h3>Input: Del padre hacia el hijo.</h3>
+                  <p>{{subComponentProperty}}</p>
+                  <h3>Output: Del hijo hacia el padre</h3>
                   <p><button (click)='onClick()'>onClick</button>
               """
 )

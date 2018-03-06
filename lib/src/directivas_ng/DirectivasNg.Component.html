@@ -1,3 +1,22 @@
-<p>
-  directivas-ng works!
-</p>
+
+<!-- repetir segun la cantidad de empleados que estan en la lista. -->
+<div *ngFor="let employee of employees">
+
+  <p *ngIf="isProfessor(employee)"> Esta prsente el profesor: {{employee.name}}</p>
+
+  <input type="checkbox" [(ngModel)]="employee.checked">
+
+  <span>{{ employee.name }}</span>
+
+  <button (click)="removeEmployee(employee)">Delete</button>
+
+</div>
+
+<!-- con # definimos variables en la plantilla (template) -->
+<input #employeeName>
+<button (click)="addEmployee(employeeName.value); employeeName.value=''">Add</button>
+
+
+<ul>
+    <li *ngFor="let employee of employees">{{employee.name}}</li>
+</ul>
