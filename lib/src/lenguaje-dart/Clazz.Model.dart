@@ -16,7 +16,7 @@ class Clazz {
   static final DOS = 2;  // Atributo staico y constante.
 
   /**
-   * Atributos de clase.
+   * Atributos de esta clase.
    */
   num x, y;  // Para trabajar con get y set.
 
@@ -31,6 +31,7 @@ class Clazz {
   }
 
   /**
+   * Constructores con nombres.
    * Se definen en el constructor y se asignar automaticamente.
    */
   Clazz.auto(this.x, this.y) { }
@@ -39,7 +40,7 @@ class Clazz {
    * Constructores con nombres.
    * Se definen en el constructor y se bebe asignar manualmente.
    */
-  Clazz.of(int x, int y) {
+  Clazz.manual(int x, int y) {
     this.x = x;
     this.y = y;
   }
@@ -71,13 +72,11 @@ class Clazz {
   /**
    * Getter y Setter con palabra reselvada.
    */
-  int get () {
-    return this.x;
-  }
+  int get getX2 =>  this.x;
+  int get getY2 =>  this.y;
 
-  void set Y(int y) {
-    this.y = y;
-  }
+  set setX2(int x2) => this.x = x2;
+  set setY2(int y2) => this.y = y2;
 
   /**
    * Declaracion de una funcion.
@@ -160,4 +159,14 @@ class Clazz {
     int k = 0;
     while (k < n) yield k++;
   }
+
+  /**
+   * Covertir a String.
+   */
+  @override
+  String toString() {
+    return 'Clazz{CERO: $CERO, x: $x, y: $y}';
+  }
+
+
 }
