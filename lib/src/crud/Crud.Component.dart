@@ -1,8 +1,9 @@
 import 'package:angular/angular.dart';
+import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_components/angular_components.dart';
+
 import 'package:angular_demo/src/core/Employee.Model.dart';
 import 'package:angular_demo/src/crud/Item.Model.dart';
-import 'package:angular_forms/angular_forms.dart';
 
 
 @Component(
@@ -34,28 +35,28 @@ class Crud implements OnInit {
   Item itemUpdate = new Item(0, "");
   Item itemEdit;
 
-  ngOnInit() {
+  void ngOnInit() {
     this.items.add(new Item(1, 'uno'));
     this.items.add(new Item(2, 'dos'));
     this.items.add(new Item(3, 'tres'));
   }
 
-  addItem() {
+  void addItem() {
     this.items.add(this.itemCreate);
     this.itemCreate = new Item(0, "");
   }
 
-  editItem(Item item) {
+  void editItem(Item item) {
     this.itemEdit = item;
     this.itemUpdate.id = item.id;
     this.itemUpdate.name = item.name;
   }
 
-  removeItem(Item item) {
+  void removeItem(Item item) {
     this.items.remove(item);
   }
 
-  updateItem(Item item) {
+  void updateItem(Item item) {
     this.itemEdit.id = this.itemUpdate.id;
     this.itemEdit.name = this.itemUpdate.name;
     this.itemUpdate = new Item(0, "");
