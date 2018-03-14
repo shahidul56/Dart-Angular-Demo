@@ -1,11 +1,17 @@
 import 'package:angular/angular.dart';
+import 'package:angular_demo/src/router/Route1.Component.dart';
+import 'package:angular_demo/src/router/Route2.Component.dart';
+import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_components/angular_components.dart';
+import 'package:angular_router/angular_router.dart';
+
 import 'package:angular_demo/src/binding/Binding.Component.dart';
 import 'package:angular_demo/src/crud/Crud.Component.dart';
 import 'package:angular_demo/src/directivas_ng/DirectivasNg.Component.dart';
 import 'package:angular_demo/src/lenguaje-dart/Dart.Component.dart';
 import 'package:angular_demo/src/sub-comp/Sub-Comp.Component.dart';
-import 'package:angular_forms/angular_forms.dart';
+
+
 
 @Component(
     selector: 'app-root',
@@ -15,16 +21,22 @@ import 'package:angular_forms/angular_forms.dart';
       CORE_DIRECTIVES,
       formDirectives,
       materialDirectives,
+      ROUTER_DIRECTIVES,
       Dart,
       Binding,
       SubComp,
       DirectivasNg,
-      Crud,
+      Crud
     ],
     providers: const [
-      materialProviders
+      materialProviders,
+      ROUTER_PROVIDERS
     ],
 )
+@RouteConfig(const [
+  const Route(path: '/route1', component: Route1, name: '1'),
+  const Route(path: '/route2', component: Route2, name: '2')
+])
 class AppComponent  {
 
   final List<Hero> heroes = <Hero>[
@@ -34,12 +46,11 @@ class AppComponent  {
     new Hero(4, 'Magneta')
   ];
 
-  var title = 'Demo echo en Angular Dart.';
+  final String title = 'Demo echo en Angular Dart.';
 
   void procesarEvento(String value) {
 
   }
-
 
 }
 
