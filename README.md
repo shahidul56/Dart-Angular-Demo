@@ -31,8 +31,8 @@ sopesar los pros y los contras de las herramientas disponibles a su disposición
 ### Inicio rápido
 
 ```bash
-$ git clone https://github.com/Ing-Brayan-Martinez/Dart-React-Redux-Demo.git
-$ cd Dart-React-Redux-Demo
+$ git clone https://github.com/Ing-Brayan-Martinez/Dart-Angular-Demo.git
+$ cd Dart-Angular-Demo
 $ pub get
 $ pub serve --port=9080
 ```
@@ -92,6 +92,8 @@ $ sudo apt -y install dart
 ```
 
 #### Puede instalar Dart en windows usando el  community install wizard.
+
+puede darle click a la imagen para descargar el instalador.
 
 <p align="center">
     <a href="http://www.gekorm.com/dart-windows/">
