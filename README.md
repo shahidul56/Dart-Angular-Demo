@@ -95,7 +95,7 @@ $ sudo apt -y install dart
 
 <p align="center">
     <a href="http://www.gekorm.com/dart-windows/">
-        <img src="https://github.com/Ing-Brayan-Martinez/Dart-Angular-Demo/blob/master/docs/Dart%20Summit%202016%20-%20AngularDart%202.png?raw=true" alt="Dart React Redux Demo" width="800"/>
+        <img src="https://github.com/Ing-Brayan-Martinez/Dart-Angular-Demo/blob/master/docs/installer-screenshot-no.png?raw=true" alt="Dart React Redux Demo" width="800"/>
     </a>
 </p>
 
