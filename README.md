@@ -1,35 +1,10 @@
-## Setup for Development
-
-Welcome to the example app used in the
-[Setup for Development](https://webdev.dartlang.org/angular/guide/setup) page
-of [Dart for the web](https://webdev.dartlang.org).
-
-You can run a [hosted copy](https://webdev.dartlang.org/examples/quickstart) of this
-sample. Or run your own copy:
-
-1. Create a local copy of this repo (use the "Clone or download" button above).
-2. Get the dependencies: `pub get`
-3. Launch a development server: `pub serve`
-4. In a browser, open [http://localhost:8080](http://localhost:8080)
-
-In Dartium, you'll see the app right away. In other modern browsers,
-you'll have to wait a bit while pub converts the app.
-
----
-
-*Note:* The content of this repository is generated from the
-[Angular docs repository][docs repo] by running the
-[dart-doc-syncer](//github.com/dart-lang/dart-doc-syncer) tool.
-If you find a problem with this sample's code, please open an [issue][].
-
-[docs repo]: //github.com/dart-lang/site-webdev/tree/master/examples/ng/doc/quickstart
-[issue]: //github.com/dart-lang/site-webdev/issues/new?title=examples/ng/doc/quickstart
 
 
-<h1 align="center">Comenzando con React, Redux y Dart</h1>
+
+<h1 align="center">Comenzando con Angular y Dart</h1>
 
 <h1 align="center">
-  <img src="https://github.com/Ing-Brayan-Martinez/Dart-React-Redux-Demo/blob/master/docs/capture.png" alt="Dart React Redux Demo" width="800"/>
+  <img src="https://github.com/Ing-Brayan-Martinez/Dart-Angular-Demo/blob/master/docs/Dart%20Summit%202016%20-%20AngularDart%202.png?raw=true" alt="Dart React Redux Demo" width="800"/>
 </h1>
 
 [![Build Status](https://travis-ci.org/leerob/dart-react-todo.svg?branch=master)](https://travis-ci.org/leerob/dart-react-todo)
@@ -41,14 +16,13 @@ If you find a problem with this sample's code, please open an [issue][].
 Hay un millón de formas diferentes de crear una aplicación web en el paisaje actual. Diferentes idiomas y frameworks van y 
 vienen y varían en popularidad. No hay una sola manera correcta de hacer las cosas y, en última instancia, se trata de 
 sopesar los pros y los contras de las herramientas disponibles a su disposición. El objetivo de este documento es informarle
- sobre otra opción que posiblemente no haya considerado anteriormente: el uso de React, Redux en Dart.
+ sobre otra opción que posiblemente no haya considerado anteriormente: el uso de Angular Dart.
 
 ### Tabla de Contenidos
 
 - [Inicio rápido](#inicio-rápido)
 - [Que es Dart?](#que-es-dart)
-- [Que es React?](#que-es-react)
-- [Que es Redux?](#que-es-redux)
+- [Que es Angular?](#que-es-angular)
 - [Empezando](#empezando)
 - [Dart Development Environment](#dart-development-environment)
 - [Referencias](#referencias)
@@ -81,29 +55,49 @@ Google usa Dart para [AdWords] (https://news.dartlang.org/2016/03/the-new-adword
 la mayoría de los ingresos de Google. Si tiene curiosidad, aquí hay una lista de algunas compañías 
 [que usan Dart.] (Https://www.dartlang.org/community/who-uses-dart)
 
-### Que es React?
+### Que es Angular?
 
-React es una librería Javascript focalizada en el desarrollo de interfaces de usuario. Esa es su principal área de trabajo, 
-pero lo cierto es que con todo el ecosistema de aplicaciones y herramientas y componentes, con React encontramos un excelente aliado para hacer todo tipo de aplicaciones web, SPA (Single Page Application) o incluso aplicaciones para móviles.
-
-### Que es Redux?
-
-Redux es una librería para controlar el estado de nuestras aplicaciones web fácilmente, de una forma consistente entre 
-cliente y servidor, testeable y con una gran experiencia de desarrollo. Tambien se puede descir que Redux es un contenedor 
-predecible del estado de aplicaciones JavaScript.
-
-Redux está en gran parte influenciado por la arquitectura Flux propuesta por Facebook para las aplicaciones de React.js
- y por el lenguaje Elm, esta muy pensado para React.js, o cual cualquier otra librería de vistas. Es muy pequeño (2kB) y no tiene 
-dependencias. 
+Angular  es un framework para aplicaciones web desarrollado en TypeScript, 
+de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Su
+objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un
+esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.
+  
 
 ### Empezando
 
-Puede instalar Dart en macOS usando Homebrew.
+#### Puede instalar Dart en macOS usando Homebrew.
 
 ```bash
 $ brew tap dart-lang/dart
 $ brew install dart --with-content-shell --with-dartium
 ```
+
+#### Puede instalar Dart en linux usando apt.
+
+Primero, realice la siguiente configuración única:
+
+```bash
+$ sudo apt -y update
+$ sudo apt -y install apt-transport-https
+$ sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+$ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+```
+
+Luego instale el Dart SDK:
+
+
+```bash
+$ sudo apt -y update
+$ sudo apt -y install dart
+```
+
+#### Puede instalar Dart en windows usando el  community install wizard.
+
+<p align="center">
+    <a href="http://www.gekorm.com/dart-windows/">
+        <img src="https://github.com/Ing-Brayan-Martinez/Dart-Angular-Demo/blob/master/docs/Dart%20Summit%202016%20-%20AngularDart%202.png?raw=true" alt="Dart React Redux Demo" width="800"/>
+    </a>
+</p>
 
 ### Dart Development Environment
 
@@ -224,9 +218,9 @@ $ ddev format
     
 Este proyecto fue basado en:
 
-- [Curso avanzado de React (Redux y Testing)](https://www.youtube.com/watch?v=RZNNu2pO49g&list=PLxyfMWnjW2kuyePV1Gzn5W_gr3BGIZq8G)
-- [redux-example](https://github.com/makeitrealcamp/redux-example)
-- [dart-react-todo](https://github.com/leerob/dart-react-todo)
+- [FENW. Curso 2017-18. Angular](https://www.youtube.com/watch?v=V7lCii-vEog&list=PLj2IVmcP-_QMxz3QXrsnuXrWEQkLCq57-)
+- [angular-examples/quickstart](https://github.com/angular-examples/quickstart/tree/master)
+- [Dart for the web](https://webdev.dartlang.org/)
 
 ### Recursos Adicionales
 
